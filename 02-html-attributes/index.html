@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTLM</title>
+
+    <style>
+        /*
+        CSS
+        */
+        h1 {
+            background: red;
+        }
+
+        p {
+            background: blue;
+        }
+
+        #cabecalho-dois {
+            background-color: purple;
+        }
+
+        .fundo-vermelho {
+            background-color: red;
+        }
+
+        /* 
+        nesse caso nao mudará nada pois o id tem maior prioridade 
+        em relaçao a class
+        */
+
+        .bold {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">
+        Testando atributos
+    </h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">
+        Testando atributos 2
+    </h1>
+    <p>um texto <b class="bold">qualquer</b>.</p>
+</body>
+</html>
