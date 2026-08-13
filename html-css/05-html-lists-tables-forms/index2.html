@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 800px;
+            text-align: left;
+            table-layout: fixed;
+        }
+
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        table caption{
+            caption-side: bottom;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        tfoot td, table th {
+            background-color: #ddd;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+
+        .responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>Sou novo na situation</p>
+<div class="responsive-table">
+    <table>
+        <caption>
+            Uma descriçao para tabela
+        </caption>
+        <thead>
+            <tr>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="">AQUI</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <td>TOTAL:</td>
+            </tr>
+            <tr>
+                <td>R$200</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</div>
+</body>
+</html>
